@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Molka Somrani — Stagiaire Systèmes Embarqués & Mobiles</title>
+  <meta name="description" content="Portfolio et CV en ligne de Molka Somrani — étudiante en Technologies de l'Informatique, ISET de Radès.">
+  <style>
+    :root{
+      --bg:#f5f7fb; --card:#ffffff; --accent:#4a4aff; --muted:#6b7280; --radius:14px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f1724;line-height:1.5}
+    .container{max-width:1000px;margin:36px auto;padding:20px}
+
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{
+      width:128px;height:128px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#7c7cff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:32px;
+      flex:0 0 128px;box-shadow:0 6px 18px rgba(74,74,255,0.12)
+    }
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(15,23,36,0.06)}
+
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .section-title h2{margin:0;font-size:16px;color:var(--accent)}
+
+    ul{padding-left:18px;margin:0}
+    .meta{display:flex;flex-direction:column;gap:6px}
+    .meta a{color:var(--accent);text-decoration:none}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .pill{background:#eef0ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-size:13px}
+
+    .btns{display:flex;gap:10px}
+    .btn{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px}
+    .btn.secondary{background:transparent;border:1px solid #e6e6ff;color:var(--accent)}
+
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media(max-width:880px){.grid{grid-template-columns:1fr}.avatar{width:96px;height:96px}}
+
+    /* toast */
+    .toast{position:fixed;right:20px;bottom:20px;background:#111;color:white;padding:10px 14px;border-radius:10px;opacity:0;transform:translateY(8px);transition:all .28s ease;pointer-events:none}
+    .toast.show{opacity:1;transform:translateY(0);pointer-events:auto}
+    /* animations */
+    @keyframes fadeUp{0%{opacity:0;transform:translateY(20px);}100%{opacity:1;transform:translateY(0);}}
+    @keyframes popIn{0%{opacity:0;transform:scale(.9);}100%{opacity:1;transform:scale(1);}}
+
+    body.loaded .card{animation:fadeUp .6s ease forwards;}
+    body.loaded header{animation:fadeUp .6s ease .05s forwards;}
+    body.loaded .avatar{animation:popIn .5s ease .1s forwards;}
+
+    .btn{transition:.25s ease;}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(74,74,255,.25);}    
+    /* animations */
+    @keyframes fadeUp{0%{opacity:0;transform:translateY(20px);}100%{opacity:1;transform:translateY(0);}}
+    @keyframes popIn{0%{opacity:0;transform:scale(.9);}100%{opacity:1;transform:scale(1);}}
+
+    body.loaded .card{animation:fadeUp .6s ease forwards;}
+    body.loaded header{animation:fadeUp .6s ease .05s forwards;}
+    body.loaded .avatar{animation:popIn .5s ease .1s forwards;}
+
+    .btn{transition:.25s ease;}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(74,74,255,.25);}  
+
+    /* DARK MODE */
+    :root.dark{
+      --bg:#0e0e16;
+      --card:#1a1a24;
+      --accent:#8a8aff;
+      --muted:#9ca3af;
+      color:white;
+    }
+    :root.dark body{background:var(--bg);color:white;}
+
+    #darkToggle{
+      position:fixed;bottom:20px;left:20px;
+      background:var(--accent);color:white;border:none;
+      padding:10px 14px;border-radius:10px;cursor:pointer;
+      font-weight:600;box-shadow:0 6px 20px rgba(0,0,0,.25);
+      transition:.25s;
+    }
+    #darkToggle:hover{transform:scale(1.05);}  
+  </style>
+  <button id="darkToggle">Dark Mode</button>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">MS</div>
+      <div>
+        <h1>SOMRANI Molka</h1>
+        <p class="lead">Stagiaire en Systèmes Embarqués et Mobiles — Étudiante L3, ISET Radès</p>
+        <div style="display:flex;gap:10px;margin-top:8px" class="btns">
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn secondary" href="#experience">Expériences</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="card">
+        <div class="section-title"><h2>Profil</h2></div>
+        <p>Étudiante en 3ème année Licence en Technologies de l'Informatique à l'ISET de Radès. Dotée de compétences communicationnelles et collaboratives, je souhaite contribuer à la conception et à l’optimisation de dispositifs électroniques mobiles dans le cadre d’un stage formateur. Recherche un stage de fin d'étude à partir de <strong>janvier 2026</strong>.</p>
+
+        <div style="margin-top:18px">
+          <div class="section-title"><h2>Compétences techniques</h2></div>
+          <div class="skills">
+            <span class="pill">Python</span>
+            <span class="pill">C / C++</span>
+            <span class="pill">Java (Android)</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">SQL / PHP</span>
+            <span class="pill">ESP32 / MQTT / UART</span>
+            <span class="pill">Git & GitHub</span>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <div class="section-title"><h2>Certificats</h2></div>
+          <ul>
+            <li>PCAP — Programming Essentials in Python (Cisco Networking Academy)</li>
+            <li>Découvrir l'IA générative (LinkedIn Learning)</li>
+            <li>Leadership & Innovation Development (Virtual Exchange)</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:18px">
+          <div class="section-title"><h2>Intérêts & activités</h2></div>
+          <ul>
+            <li>Club ROBOTEK ISET Rades</li>
+            <li>Club Croissant Rouge ISET Rades</li>
+            <li>Leader au Scouts Tunisiens</li>
+            <li>Natation, Cuisine, Bénévolat</li>
+          </ul>
+        </div>
+
+      </main>
+
+      <aside class="card">
+        <div class="section-title"><h2>Coordonnées</h2></div>
+        <div class="meta">
+          <div><strong>Email:</strong> <a href="mailto:molkasom9@gmail.com">molkasom9@gmail.com</a></div>
+          <div><strong>Téléphone:</strong> <a href="tel:+21658301618">+216 58301618</a></div>
+          <div><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/molka-somrani-5921422a7" target="_blank">linkedin.com/in/molka-somrani-5921422a7</a></div>
+          <div><strong>GitHub:</strong> <a href="https://github.com/molka2004" target="_blank">github.com/molka2004</a></div>
+        </div>
+
+        <div style="margin-top:14px">
+          <div class="section-title"><h2>Expériences professionnelles</h2></div>
+          <div>
+            <strong>ACTIA Engineering Services — Stage de perfectionnement</strong>
+            <div style="font-size:13px;color:var(--muted)">01/2025 – 02/2025</div>
+            <ul style="margin-top:8px">
+              <li>Prototype de mesure de la qualité de l'air (AQS sensor)</li>
+              <li>Communication entre deux ESP32 via UART</li>
+              <li>Transmission des données vers un dashboard via MQTT (HiveMQ)</li>
+              <li>Conception d'une application Android pour visualisation</li>
+            </ul>
+
+            <strong style="display:block;margin-top:12px">MECAPROTEC Aéro — Stage d'initiation</strong>
+            <div style="font-size:13px;color:var(--muted)">01/2024 – 02/2024</div>
+            <ul style="margin-top:8px">
+              <li>Installation & paramétrage de matériels réseau</li>
+              <li>Participation au processus opérationnel du centre de service</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="margin-top:14px">
+          <div class="section-title"><h2>Langues</h2></div>
+          <ul>
+            <li>Arabe — Langue maternelle</li>
+            <li>Français — Courant</li>
+            <li>Anglais — Bon niveau</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:14px;text-align:center">
+          <button class="btn" id="copyEmailBtn">Copier email</button>
+          <button class="btn secondary" id="downloadBtn">Télécharger CV (PDF)</button>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer class="card" id="contact">
+      <strong>Contact</strong>
+      <p style="margin:6px 0">Email: <a href="mailto:molkasom9@gmail.com">molkasom9@gmail.com</a> — Téléphone: <a href="tel:+21658301618">+216 58301618</a></p>
+      <p style="margin:0;color:var(--muted);font-size:13px">© 2025 Somrani Molka — Disponible pour stage à partir de janvier 2026</p>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    // interactions: copy email, download placeholder PDF (client-side simple), toast
+    function showToast(text){
+      const t = document.getElementById('toast');
+      t.textContent = text; t.classList.add('show');
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(()=>t.classList.remove('show'),2200);
+    }
+
+    document.getElementById('copyEmailBtn').addEventListener('click', async ()=>{
+      try{
+        await navigator.clipboard.writeText('molkasom9@gmail.com');
+        showToast('Email copié dans le presse-papier');
+      }catch(e){ showToast('Impossible de copier — utilise le clic droit'); }
+    });
+
+    document.getElementById('downloadBtn').addEventListener('click', ()=>{
+      // simple text->pdf placeholder: will download a minimal CV as .txt if pdf creation not available
+      const text = `SOMRANI Molka\nStagiaire en Systèmes Embarqués et Mobiles\nEmail: molkasom9@gmail.com\nTel: +21658301618\n\nProfil:\nÉtudiante L3, ISET Radès — recherche stage à partir de janvier 2026.`;
+      const blob = new Blob([text], {type:'text/plain'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'CV_Molka_Somrani.txt'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+      showToast('Téléchargement démarré (format texte).');
+    });
+
+    // smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault(); const id = a.getAttribute('href'); if(id==='#') return; const el = document.querySelector(id); if(el) el.scrollIntoView({behavior:'smooth'});
+      });
+    });
+    // reveal animations on load
+    window.addEventListener('load',()=>{
+      document.body.classList.add('loaded');
+    });
+
+    // reveal animations on load
+    window.addEventListener('load',()=>{ document.body.classList.add('loaded'); });
+
+    // DARK MODE toggle
+    const toggle=document.getElementById('darkToggle');
+    toggle.addEventListener('click',()=>{
+      document.documentElement.classList.toggle('dark');
+      toggle.textContent=document.documentElement.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
+    });
+
+  </script>
+</body>
+</html>
