@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Molka Somrani
 
-🎓 **Graduate in Computer Science (Embedded Systems & Mobile Technologies)** from **ISET Radès, Tunisia**.
+🎓 **Graduate in Computer technology (Embedded Systems & Mobile Technologies)** from **ISET Radès, Tunisia**.
 
 I'm passionate about **Embedded Systems**, **IoT**, **Artificial Intelligence**, **Backend Development**, and **Software Automation**. I enjoy designing intelligent solutions that combine hardware and software to solve real-world engineering challenges.
 
@@ -8,7 +8,7 @@ I'm passionate about **Embedded Systems**, **IoT**, **Artificial Intelligence**,
 
 # 🚀 About Me
 
-- 🎓 Graduate in Computer Science – Embedded Systems & Mobile Technologies
+- 🎓 Graduate in Computer technology – Embedded Systems & Mobile Technologies
 - 💼 Looking for opportunities in Embedded Systems, AI, IoT and Software Development
 - 🌍 Based in Tunisia
 - 💡 Interested in AI-powered embedded applications, automation and Industry 4.0
